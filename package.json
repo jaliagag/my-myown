@@ -1,0 +1,23 @@
+{
+  "name": "my-myown",
+  "version": "1.0.0",
+  "description": "- npm install particles.js\r - npm install animate.css --save",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaliagag/my-myown.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaliagag/my-myown/issues"
+  },
+  "homepage": "https://github.com/jaliagag/my-myown#readme",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "particles.js": "^2.0.0"
+  }
+}
