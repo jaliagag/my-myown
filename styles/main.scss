@@ -8,6 +8,10 @@ a {
     text-decoration: none;
 }
 
+#hamburger {
+    display: none;
+}
+
 .header {
     margin-top: 2%;
 }
@@ -51,6 +55,14 @@ a:hover {
     }
 
     .home {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    .derecha {
         display: none;
     }
 }

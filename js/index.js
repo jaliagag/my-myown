@@ -1,8 +1,9 @@
-$('document').ready(function () {
+$( function () {
+    $('#derecha').show();
     var trigger = $('#hamburger'),
         isClosed = true;
 
-    trigger.click(function () {
+    trigger.on("click",function () {
         burgerTime();
     });
 
@@ -11,10 +12,12 @@ $('document').ready(function () {
             trigger.removeClass('is-open');
             trigger.addClass('is-closed');
             isClosed = false;
+            $('#derecha').hide();
         } else {
             trigger.removeClass('is-closed');
             trigger.addClass('is-open');
             isClosed = true;
+            $('#derecha').show();
         }
     }
 })

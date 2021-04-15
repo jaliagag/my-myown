@@ -7,6 +7,7 @@
     <!-- LIB -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://use.fontawesome.com/20147f0368.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- /LIB -->
     <!-- STYLES -->
     <link rel="stylesheet" href="styles/main.css">
@@ -29,13 +30,13 @@
                     <i class="fa fa-empire" style="font-size:26px;color:black" id="longLivSmall"></i>
                 </a>
             </div>
-            <div class="derecha">
+            <div class="derecha" id="derecha">
                 <a href="#inicio" class="home">Inicio</a>
                 <a href="#about">Sobre mí</a>
                 <a href="#projects">Proyectos</a>
                 <a href="#contact">Contacto</a>
-            </div>
-            <div class="idioma">
+            <!-- </div>
+            <div class="idioma"> -->
                 <span>
                     <a href="index.html">ES</a>
                     |
@@ -55,17 +56,14 @@
                 <!-- svg ring containter -->
                 <div class="burger-ring">
                     <svg class="svg-ring">
-                        <path class="path" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-width="4"
-                            d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2" />
+                        <path class="path" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-width="4" d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2" />
                     </svg>
                 </div>
                 <!-- the masked path that animates the fill to the ring -->
 
                 <svg width="0" height="0">
                     <mask id="mask">
-                        <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="rgb(0, 0, 0)0"
-                            stroke-miterlimit="10"
-                            stroke-width="4" d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4" />
+                        <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="rgb(0, 0, 0)0" stroke-miterlimit="10" stroke-width="4" d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4" />
                     </mask>
                 </svg>
                 <div class="path-burger">
