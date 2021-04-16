@@ -6,6 +6,18 @@ body {
 a {
   text-decoration: none; }
 
+a:hover {
+  text-decoration: none; }
+
+.derecha a {
+  margin-left: 20px; }
+
+.spanish {
+  margin-right: 20px; }
+
+.respDer {
+  display: none; }
+
 #hamburger {
   display: none; }
 
@@ -27,32 +39,40 @@ a {
   display: flex;
   justify-content: space-around; }
 
-a:hover {
-  text-decoration: none; }
-
+@media screen and (min-width: 600px) {
+  .derecha {
+    display: block !important; } }
 @media screen and (max-width: 600px) {
   body {
     background-color: olive; }
+
+  .arribita {
+    display: flex;
+    justify-content: space-between; }
 
   #longLivBig {
     display: none; }
 
   #longLivSmall {
-    display: block; }
+    display: block;
+    margin-left: 10px;
+    padding-top: 7px; }
 
   .home {
     display: none; }
 
   #hamburger {
-    display: block; }
+    display: block;
+    margin-top: -10px; }
 
   .derecha {
-    display: none; } }
+    display: flex;
+    flex-direction: column; } }
 *, *:before, *:after {
   box-sizing: border-box; }
 
 .hamburglar {
-  transform: scale(1);
+  transform: scale(0.6);
   width: 68px;
   height: 68px;
   -webkit-touch-callout: none;
