@@ -13,9 +13,6 @@ body {
     background-repeat: no-repeat;
 }
 
-.header {
-}
-
 a {
     text-decoration: none;
     text-transform: uppercase;
@@ -107,7 +104,7 @@ a:hover {
     .derecha {
         display: block !important;
     }
-    .respMenu {
+    #respMenu {
         display: none !important;
     }
 }
@@ -151,7 +148,7 @@ a:hover {
         margin-top: -10px;
     }
     
-    .respMenu {
+    #respMenu {
         display: flex;
         flex-flow: column wrap;
         width: 100%;

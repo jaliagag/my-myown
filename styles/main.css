@@ -78,7 +78,7 @@ a:hover {
   .derecha {
     display: block !important; }
 
-  .respMenu {
+  #respMenu {
     display: none !important; } }
 @media screen and (max-width: 600px) {
   .barrita {
@@ -107,7 +107,7 @@ a:hover {
     display: block;
     margin-top: -10px; }
 
-  .respMenu {
+  #respMenu {
     display: flex;
     flex-flow: column wrap;
     width: 100%;
