@@ -16,12 +16,12 @@ if (window.outerWidth < 600) {
                 trigger.removeClass('is-open');
                 trigger.addClass('is-closed');
                 isClosed = false;
-                $('#derecha').toggle();
+                $('#respMenu').toggle();
             } else {
                 trigger.removeClass('is-closed');
                 trigger.addClass('is-open');
                 isClosed = true;
-                $('#derecha').toggle();
+                $('#respMenu').toggle();
             }
         }
     })

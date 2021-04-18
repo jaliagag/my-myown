@@ -1,10 +1,13 @@
 body {
   max-width: 1080px;
   margin: auto;
-  font-family: 'Inconsolata', monospace; }
+  font-family: 'Inconsolata', monospace;
+  color: #1bfc30;
+  background-color: #2e3324; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #1bfc30; }
 
 a:hover {
   text-decoration: none; }
@@ -14,9 +17,6 @@ a:hover {
 
 .spanish {
   margin-right: 20px; }
-
-.respDer {
-  display: none; }
 
 #hamburger {
   display: none; }
@@ -41,10 +41,17 @@ a:hover {
 
 @media screen and (min-width: 600px) {
   .derecha {
-    display: block !important; } }
+    display: block !important; }
+
+  .respMenu {
+    display: none !important; } }
 @media screen and (max-width: 600px) {
-  body {
-    background-color: olive; }
+  .barrita {
+    display: none;
+    position: relative; }
+
+  .derecha {
+    display: none !important; }
 
   .arribita {
     display: flex;
@@ -65,9 +72,30 @@ a:hover {
     display: block;
     margin-top: -10px; }
 
-  .derecha {
+  .respMenu {
     display: flex;
-    flex-direction: column; } }
+    flex-flow: column wrap;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: #0f1301; }
+
+  .cajaRes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px; }
+
+  .flashy {
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    margin-top: 20px; }
+
+  .nombre {
+    display: flex;
+    font-size: 45px; } }
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -106,7 +134,7 @@ a:hover {
     width: 30px;
     height: 34px;
     margin: 0 4px 0 0;
-    background: black; }
+    background: #1bfc30; }
 
 @keyframes rotate-out {
   0% {
@@ -174,7 +202,7 @@ a:hover {
   height: 4px;
   width: 36px;
   border-radius: 2px;
-  background: black; }
+  background: #1bfc30; }
 
 .burger-bun-top {
   top: 0;
