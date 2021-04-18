@@ -3,9 +3,9 @@ if (window.outerWidth < 600) {
         let trigger = $('#hamburger');
         let isClosed = true;
         
-        trigger.on("load", function() {
-            burgerTime();
-        })
+        // trigger.on("load", function() {
+        //     burgerTime();
+        // })
 
         trigger.on("click", function () {
             burgerTime();

@@ -1,16 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style src="styles/main.css"></style>
+    <!-- LIB -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/16e6e14aa2.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- /LIB -->
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+    </style>
+    <!-- /STYLES -->
     <title>#yaNoTenes20</title>
 </head>
+
 <body>
-    
-    
-    
+    <!-- <h1 class="animate__animated animate__bounce">An animated element</h1> -->
+    <section class="header" id="inicio">
+        <div class="arribita">
+            <div class="izquierda">
+                <!-- <img src="assets/imperial-log.png" alt="" srcset=""> -->
+                <a href="#inicio">
+                    <i class="fa fa-empire" style="font-size:46px;color:#1bfc30" id="longLivBig"></i>
+                    <i class="fa fa-empire" style="font-size:36px;color:#1bfc30" id="longLivSmall"></i>
+                </a>
+            </div>
+            <!-- HAMBURGER MENU -->
+            <div id="hamburger" class="hamburglar is-closed">
+                <div class="burger-icon">
+                    <div class="burger-container">
+                        <span class="burger-bun-top"></span>
+                        <span class="burger-filling"></span>
+                        <span class="burger-bun-bot"></span>
+                    </div>
+                </div>
+
+                <!-- svg ring containter -->
+                <div class="burger-ring">
+                    <svg class="svg-ring">
+                        <path class="path" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-width="4"
+                            d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2" />
+                    </svg>
+                </div>
+                <!-- the masked path that animates the fill to the ring -->
+
+                <svg width="0" height="0">
+                    <mask id="mask">
+                        <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="rgb(0, 0, 0)0"
+                            stroke-miterlimit="10" stroke-width="4"
+                            d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4" />
+                    </mask>
+                </svg>
+                <div class="path-burger">
+                    <div class="animate-path">
+                        <div class="path-rotation"></div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- HAMBURGER MENU -->
+            <div class="derecha" id="derecha">
+                <a href="#inicio" class="home">home</a>
+                <a href="#about">about</a>
+                <a href="#projects">projects</a>
+                <a href="#contact">contact</a>
+                <!-- </div>
+            <div class="idioma"> -->
+                <span>
+                    <a href="index.html" class="spanish">ES</a>
+                    <span>|</span>
+                    <a href="index_eng.html">EN</a>
+                </span>
+            </div>
+        </div>
+        <div class="respMenu" id="respMenu">
+            <a href="#inicio" class="cajaRes">home</a>
+            <a href="#about" class="cajaRes">about</a>
+            <a href="#projects" class="cajaRes">projects</a>
+            <a href="#contact" class="cajaRes">contact</a>
+            <!-- </div>
+        <div class="idioma"> -->
+            <span>
+                <a href="index.html" class="cajaRes">ES</a>
+                <span class="barrita">|</span>
+                <a href="index_eng.html" class="cajaRes">EN</a>
+            </span>
+        </div>
+        <div class="flashy">
+            <span class="nombre">José Manuel Francisco Aliaga</span>
+            <span class="jk">Yup, all of that, just my name...</span>
+            <div class="summary">
+                <div class="listillia">
+                    <span>Jr Linux Admin</span><i class="fab fa-linux" id="icon linux"></i>
+                </div>
+                <div class="listillia">
+                    <span>Full Stack Web Developer</span><i class="fab fa-firefox-browser" id="icon browser"></i>
+                </div>
+                <div class="listillia">
+                    <span>Ethical Hacking Enthusiast</span><i class="fas fa-server" id="icon server"></i>
+                </div>
+                <div class="listillia">
+                    <span>Somewhat Nerd</span><i class="far fa-hand-spock" id="icon nerd"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <!-- Sí, ya sé - #yaNoTenes20 -->
+    </section>
+    <section class="projects" id="projects"></section>
+    <section class="contact" id="contact">
+        <div class="contact_links">
+            <a href="https://www.linkedin.com/in/josealiagatr/" target="_blank" class="link_up"><i
+                    class="fa fa-linkedin-square" style="font-size:36px"></i> <span> </span></a>
+            <a href="https://github.com/jaliagag" target="_blank" class="link_up"><i class="fa fa-github"
+                    style="font-size:36px;color:#1bfc30"></i><span> </span> </a>
+            <a href="https://wa.me/5493513022380?text=Hey!%20Lets%20chat!" target="_blank" class="link_up"><i
+                    class="fa fa-whatsapp" style="font-size:36px;color:#1bfc30"></i><span> </span></a>
+        </div>
+    </section>
+
     <script src="js/index.js"></script>
 </body>
+
 </html>
