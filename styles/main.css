@@ -1,14 +1,19 @@
+html {
+  height: 100%; }
+
 body {
   max-width: 1080px;
   margin: auto;
   font-family: 'Inconsolata', monospace;
-  color: #1bfc30;
-  background-color: #2e3324; }
+  color: #0bce1f;
+  background-color: #2e3324;
+  background-image: linear-gradient(black, #2e3324);
+  background-repeat: no-repeat; }
 
 a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #1bfc30; }
+  color: #0bce1f; }
 
 a:hover {
   text-decoration: solid; }
@@ -62,7 +67,7 @@ a:hover {
   margin-bottom: 20px; }
 
 .listillia i {
-  margin-right: 100px;
+  margin-right: 150px;
   font-size: 30px; }
 
 .listillia span {
@@ -185,7 +190,7 @@ a:hover {
     width: 30px;
     height: 34px;
     margin: 0 4px 0 0;
-    background: #1bfc30; }
+    background: #0bce1f; }
 
 @keyframes rotate-out {
   0% {
@@ -253,7 +258,7 @@ a:hover {
   height: 4px;
   width: 36px;
   border-radius: 2px;
-  background: #1bfc30; }
+  background: #0bce1f; }
 
 .burger-bun-top {
   top: 0;

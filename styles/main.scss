@@ -1,15 +1,25 @@
+html {
+    height: 100%;
+}
+
 body {
     max-width: 1080px;
     margin: auto;
     font-family: 'Inconsolata', monospace;
-    color: #1bfc30;
+    color: #0bce1f;
     background-color: #2e3324;
+    //background-image: linear-gradient(red, yellow);
+    background-image: linear-gradient(black, #2e3324);
+    background-repeat: no-repeat;
+}
+
+.header {
 }
 
 a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #1bfc30;
+    color: #0bce1f;
 }
 
 a:hover {
@@ -22,9 +32,6 @@ a:hover {
     // height: 40px;
 }
 
-.header {
-    
-}
 
 .spanish {
     margin-right: 20px;
@@ -85,7 +92,7 @@ a:hover {
 
 .listillia i {
     //margin: auto;
-    margin-right: 100px;
+    margin-right: 150px;
     font-size: 30px;
 }
 
@@ -209,7 +216,7 @@ a:hover {
 
 // HAMBURGUESA
 // vars
-$color: #1bfc30; // icon color
+$color: #0bce1f; // icon color
 //$blue: #158fef; // background color
 $animation: 0.6s; // animation speed
 $scale: 0.6; // icon scale 68/68 default
